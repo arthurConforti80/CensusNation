@@ -1,0 +1,6 @@
+framework module Pods_CensusUSA {
+  umbrella header "Pods-CensusUSA-umbrella.h"
+
+  export *
+  module * { export * }
+}

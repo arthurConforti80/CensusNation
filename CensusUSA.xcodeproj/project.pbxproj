@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DE0F1242C7FA0330008ACF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F1232C7FA0330008ACF2 /* AppDelegate.swift */; };
+		2DE0F1262C7FA0330008ACF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F1252C7FA0330008ACF2 /* SceneDelegate.swift */; };
+		2DE0F1282C7FA0330008ACF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F1272C7FA0330008ACF2 /* ViewController.swift */; };
+		2DE0F12D2C7FA0360008ACF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE0F12C2C7FA0360008ACF2 /* Assets.xcassets */; };
+		2DE0F1302C7FA0360008ACF2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2DE0F12F2C7FA0360008ACF2 /* Base */; };
+		2DE0F1452C7FA0360008ACF2 /* CensusUSAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F1442C7FA0360008ACF2 /* CensusUSAUITests.swift */; };
+		2DE0F1472C7FA0360008ACF2 /* CensusUSAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F1462C7FA0360008ACF2 /* CensusUSAUITestsLaunchTests.swift */; };
+		2DE0F1562C7FA1DE0008ACF2 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F1552C7FA1DE0008ACF2 /* Bindable.swift */; };
+		2DE0F15C2C7FA7760008ACF2 /* PopulationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F15B2C7FA7760008ACF2 /* PopulationData.swift */; };
+		2DE0F15E2C7FA79D0008ACF2 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F15D2C7FA79D0008ACF2 /* ApiService.swift */; };
+		2DE0F1612C7FA7E00008ACF2 /* PopulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F1602C7FA7E00008ACF2 /* PopulationViewModel.swift */; };
+		2DE0F1632C7FA80E0008ACF2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F1622C7FA80E0008ACF2 /* AppCoordinator.swift */; };
+		2DE0F1672C7FA88E0008ACF2 /* PopulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0F1662C7FA88E0008ACF2 /* PopulationViewController.swift */; };
+		2DFE65532C80943100CDF091 /* PopulationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE65522C80943100CDF091 /* PopulationTableViewCell.swift */; };
+		2DFE655B2C80B3BB00CDF091 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE655A2C80B3BB00CDF091 /* ApiServiceTests.swift */; };
+		2DFE655D2C80B3E900CDF091 /* PopulationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE655C2C80B3E900CDF091 /* PopulationViewModelTests.swift */; };
+		2DFE655F2C80B48600CDF091 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE655E2C80B48600CDF091 /* MockAPIService.swift */; };
+		2DFE65672C80E2BA00CDF091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE65652C80E2BA00CDF091 /* Main.storyboard */; };
+		60F63E46D986FC34BA4CBDC4 /* Pods_CensusUSA_CensusUSAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6405C5A127C83B1B2C3AD15A /* Pods_CensusUSA_CensusUSAUITests.framework */; };
+		A5AF815E015F56EA145909D1 /* Pods_CensusUSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C0EDE8FDCC8B44AAB51B14 /* Pods_CensusUSA.framework */; };
+		C258CE17A75A9DC8857CAB79 /* Pods_CensusUSATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67A31C48B52A91721F215CC /* Pods_CensusUSATests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DE0F1372C7FA0360008ACF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DE0F1182C7FA0330008ACF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE0F11F2C7FA0330008ACF2;
+			remoteInfo = CensusUSA;
+		};
+		2DE0F1412C7FA0360008ACF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DE0F1182C7FA0330008ACF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE0F11F2C7FA0330008ACF2;
+			remoteInfo = CensusUSA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DE0F1202C7FA0330008ACF2 /* CensusUSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CensusUSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE0F1232C7FA0330008ACF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DE0F1252C7FA0330008ACF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2DE0F1272C7FA0330008ACF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2DE0F12C2C7FA0360008ACF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DE0F12F2C7FA0360008ACF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DE0F1312C7FA0360008ACF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE0F1362C7FA0360008ACF2 /* CensusUSATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CensusUSATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE0F1402C7FA0360008ACF2 /* CensusUSAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CensusUSAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE0F1442C7FA0360008ACF2 /* CensusUSAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CensusUSAUITests.swift; sourceTree = "<group>"; };
+		2DE0F1462C7FA0360008ACF2 /* CensusUSAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CensusUSAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2DE0F1552C7FA1DE0008ACF2 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		2DE0F15B2C7FA7760008ACF2 /* PopulationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationData.swift; sourceTree = "<group>"; };
+		2DE0F15D2C7FA79D0008ACF2 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		2DE0F1602C7FA7E00008ACF2 /* PopulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationViewModel.swift; sourceTree = "<group>"; };
+		2DE0F1622C7FA80E0008ACF2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		2DE0F1662C7FA88E0008ACF2 /* PopulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationViewController.swift; sourceTree = "<group>"; };
+		2DFE65522C80943100CDF091 /* PopulationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationTableViewCell.swift; sourceTree = "<group>"; };
+		2DFE655A2C80B3BB00CDF091 /* ApiServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceTests.swift; sourceTree = "<group>"; };
+		2DFE655C2C80B3E900CDF091 /* PopulationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationViewModelTests.swift; sourceTree = "<group>"; };
+		2DFE655E2C80B48600CDF091 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		2DFE65662C80E2BA00CDF091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39ECC4A9C57E60F13C6CA8AE /* Pods-CensusUSATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CensusUSATests.release.xcconfig"; path = "Target Support Files/Pods-CensusUSATests/Pods-CensusUSATests.release.xcconfig"; sourceTree = "<group>"; };
+		4DB70E6FA0AB44EDCFBD995D /* Pods-CensusUSA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CensusUSA.release.xcconfig"; path = "Target Support Files/Pods-CensusUSA/Pods-CensusUSA.release.xcconfig"; sourceTree = "<group>"; };
+		60E9CBD48BD41069ADC72716 /* Pods-CensusUSA-CensusUSAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CensusUSA-CensusUSAUITests.release.xcconfig"; path = "Target Support Files/Pods-CensusUSA-CensusUSAUITests/Pods-CensusUSA-CensusUSAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6405C5A127C83B1B2C3AD15A /* Pods_CensusUSA_CensusUSAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CensusUSA_CensusUSAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C0EDE8FDCC8B44AAB51B14 /* Pods_CensusUSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CensusUSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92A3C76CB98EA176D51F873A /* Pods-CensusUSA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CensusUSA.debug.xcconfig"; path = "Target Support Files/Pods-CensusUSA/Pods-CensusUSA.debug.xcconfig"; sourceTree = "<group>"; };
+		95F204E18B930CE263747274 /* Pods-CensusUSATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CensusUSATests.debug.xcconfig"; path = "Target Support Files/Pods-CensusUSATests/Pods-CensusUSATests.debug.xcconfig"; sourceTree = "<group>"; };
+		C67A31C48B52A91721F215CC /* Pods_CensusUSATests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CensusUSATests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18978A145DCA9EE2EFBD0BA /* Pods-CensusUSA-CensusUSAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CensusUSA-CensusUSAUITests.debug.xcconfig"; path = "Target Support Files/Pods-CensusUSA-CensusUSAUITests/Pods-CensusUSA-CensusUSAUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DE0F11D2C7FA0330008ACF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AF815E015F56EA145909D1 /* Pods_CensusUSA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE0F1332C7FA0360008ACF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C258CE17A75A9DC8857CAB79 /* Pods_CensusUSATests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE0F13D2C7FA0360008ACF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F63E46D986FC34BA4CBDC4 /* Pods_CensusUSA_CensusUSAUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DE0F1172C7FA0330008ACF2 = {
+			isa = PBXGroup;
+			children = (
+				2DE0F1222C7FA0330008ACF2 /* CensusUSA */,
+				2DE0F1392C7FA0360008ACF2 /* CensusUSATests */,
+				2DE0F1432C7FA0360008ACF2 /* CensusUSAUITests */,
+				2DE0F1212C7FA0330008ACF2 /* Products */,
+				D6E7FA768279AC1C69A36387 /* Pods */,
+				CF0AE6E3561A4EF71681B176 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2DE0F1212C7FA0330008ACF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0F1202C7FA0330008ACF2 /* CensusUSA.app */,
+				2DE0F1362C7FA0360008ACF2 /* CensusUSATests.xctest */,
+				2DE0F1402C7FA0360008ACF2 /* CensusUSAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DE0F1222C7FA0330008ACF2 /* CensusUSA */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE65652C80E2BA00CDF091 /* Main.storyboard */,
+				2DE0F1592C7FA2480008ACF2 /* PopulationData */,
+				2DE0F1542C7FA17F0008ACF2 /* Coordinator */,
+				2DE0F1532C7FA1750008ACF2 /* Core */,
+				2DE0F1232C7FA0330008ACF2 /* AppDelegate.swift */,
+				2DE0F1252C7FA0330008ACF2 /* SceneDelegate.swift */,
+				2DE0F1272C7FA0330008ACF2 /* ViewController.swift */,
+				2DE0F12C2C7FA0360008ACF2 /* Assets.xcassets */,
+				2DE0F12E2C7FA0360008ACF2 /* LaunchScreen.storyboard */,
+				2DE0F1312C7FA0360008ACF2 /* Info.plist */,
+			);
+			path = CensusUSA;
+			sourceTree = "<group>";
+		};
+		2DE0F1392C7FA0360008ACF2 /* CensusUSATests */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE655A2C80B3BB00CDF091 /* ApiServiceTests.swift */,
+				2DFE655C2C80B3E900CDF091 /* PopulationViewModelTests.swift */,
+				2DFE655E2C80B48600CDF091 /* MockAPIService.swift */,
+			);
+			path = CensusUSATests;
+			sourceTree = "<group>";
+		};
+		2DE0F1432C7FA0360008ACF2 /* CensusUSAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0F1442C7FA0360008ACF2 /* CensusUSAUITests.swift */,
+				2DE0F1462C7FA0360008ACF2 /* CensusUSAUITestsLaunchTests.swift */,
+			);
+			path = CensusUSAUITests;
+			sourceTree = "<group>";
+		};
+		2DE0F1532C7FA1750008ACF2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0F1552C7FA1DE0008ACF2 /* Bindable.swift */,
+				2DE0F15D2C7FA79D0008ACF2 /* ApiService.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2DE0F1542C7FA17F0008ACF2 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0F1622C7FA80E0008ACF2 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		2DE0F1592C7FA2480008ACF2 /* PopulationData */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0F15F2C7FA7CD0008ACF2 /* View */,
+				2DE0F15A2C7FA7580008ACF2 /* Model */,
+			);
+			path = PopulationData;
+			sourceTree = "<group>";
+		};
+		2DE0F15A2C7FA7580008ACF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0F15B2C7FA7760008ACF2 /* PopulationData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DE0F15F2C7FA7CD0008ACF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE65512C80941400CDF091 /* Cell */,
+				2DE0F1602C7FA7E00008ACF2 /* PopulationViewModel.swift */,
+				2DE0F1662C7FA88E0008ACF2 /* PopulationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DFE65512C80941400CDF091 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2DFE65522C80943100CDF091 /* PopulationTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CF0AE6E3561A4EF71681B176 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87C0EDE8FDCC8B44AAB51B14 /* Pods_CensusUSA.framework */,
+				6405C5A127C83B1B2C3AD15A /* Pods_CensusUSA_CensusUSAUITests.framework */,
+				C67A31C48B52A91721F215CC /* Pods_CensusUSATests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6E7FA768279AC1C69A36387 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92A3C76CB98EA176D51F873A /* Pods-CensusUSA.debug.xcconfig */,
+				4DB70E6FA0AB44EDCFBD995D /* Pods-CensusUSA.release.xcconfig */,
+				E18978A145DCA9EE2EFBD0BA /* Pods-CensusUSA-CensusUSAUITests.debug.xcconfig */,
+				60E9CBD48BD41069ADC72716 /* Pods-CensusUSA-CensusUSAUITests.release.xcconfig */,
+				95F204E18B930CE263747274 /* Pods-CensusUSATests.debug.xcconfig */,
+				39ECC4A9C57E60F13C6CA8AE /* Pods-CensusUSATests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DE0F11F2C7FA0330008ACF2 /* CensusUSA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE0F14A2C7FA0360008ACF2 /* Build configuration list for PBXNativeTarget "CensusUSA" */;
+			buildPhases = (
+				5ACB96522C56243612E8BB2E /* [CP] Check Pods Manifest.lock */,
+				2DE0F11C2C7FA0330008ACF2 /* Sources */,
+				2DE0F11D2C7FA0330008ACF2 /* Frameworks */,
+				2DE0F11E2C7FA0330008ACF2 /* Resources */,
+				FA4B41A04F316188B6558EAB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CensusUSA;
+			productName = CensusUSA;
+			productReference = 2DE0F1202C7FA0330008ACF2 /* CensusUSA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DE0F1352C7FA0360008ACF2 /* CensusUSATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE0F14D2C7FA0360008ACF2 /* Build configuration list for PBXNativeTarget "CensusUSATests" */;
+			buildPhases = (
+				0258CF1216079A953F8FF83D /* [CP] Check Pods Manifest.lock */,
+				2DE0F1322C7FA0360008ACF2 /* Sources */,
+				2DE0F1332C7FA0360008ACF2 /* Frameworks */,
+				2DE0F1342C7FA0360008ACF2 /* Resources */,
+				EE79A2799E48235234EC76FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DE0F1382C7FA0360008ACF2 /* PBXTargetDependency */,
+			);
+			name = CensusUSATests;
+			productName = CensusUSATests;
+			productReference = 2DE0F1362C7FA0360008ACF2 /* CensusUSATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DE0F13F2C7FA0360008ACF2 /* CensusUSAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE0F1502C7FA0360008ACF2 /* Build configuration list for PBXNativeTarget "CensusUSAUITests" */;
+			buildPhases = (
+				76C327F2D5C59DD94C98DB06 /* [CP] Check Pods Manifest.lock */,
+				2DE0F13C2C7FA0360008ACF2 /* Sources */,
+				2DE0F13D2C7FA0360008ACF2 /* Frameworks */,
+				2DE0F13E2C7FA0360008ACF2 /* Resources */,
+				B1C266FCE610004282018456 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DE0F1422C7FA0360008ACF2 /* PBXTargetDependency */,
+			);
+			name = CensusUSAUITests;
+			productName = CensusUSAUITests;
+			productReference = 2DE0F1402C7FA0360008ACF2 /* CensusUSAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DE0F1182C7FA0330008ACF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					2DE0F11F2C7FA0330008ACF2 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					2DE0F1352C7FA0360008ACF2 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 2DE0F11F2C7FA0330008ACF2;
+					};
+					2DE0F13F2C7FA0360008ACF2 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 2DE0F11F2C7FA0330008ACF2;
+					};
+				};
+			};
+			buildConfigurationList = 2DE0F11B2C7FA0330008ACF2 /* Build configuration list for PBXProject "CensusUSA" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DE0F1172C7FA0330008ACF2;
+			productRefGroup = 2DE0F1212C7FA0330008ACF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DE0F11F2C7FA0330008ACF2 /* CensusUSA */,
+				2DE0F1352C7FA0360008ACF2 /* CensusUSATests */,
+				2DE0F13F2C7FA0360008ACF2 /* CensusUSAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DE0F11E2C7FA0330008ACF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFE65672C80E2BA00CDF091 /* Main.storyboard in Resources */,
+				2DE0F12D2C7FA0360008ACF2 /* Assets.xcassets in Resources */,
+				2DE0F1302C7FA0360008ACF2 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE0F1342C7FA0360008ACF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE0F13E2C7FA0360008ACF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0258CF1216079A953F8FF83D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CensusUSATests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ACB96522C56243612E8BB2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CensusUSA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76C327F2D5C59DD94C98DB06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CensusUSA-CensusUSAUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1C266FCE610004282018456 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CensusUSA-CensusUSAUITests/Pods-CensusUSA-CensusUSAUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CensusUSA-CensusUSAUITests/Pods-CensusUSA-CensusUSAUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CensusUSA-CensusUSAUITests/Pods-CensusUSA-CensusUSAUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE79A2799E48235234EC76FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CensusUSATests/Pods-CensusUSATests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CensusUSATests/Pods-CensusUSATests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CensusUSATests/Pods-CensusUSATests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA4B41A04F316188B6558EAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CensusUSA/Pods-CensusUSA-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CensusUSA/Pods-CensusUSA-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CensusUSA/Pods-CensusUSA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DE0F11C2C7FA0330008ACF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE0F15C2C7FA7760008ACF2 /* PopulationData.swift in Sources */,
+				2DE0F1282C7FA0330008ACF2 /* ViewController.swift in Sources */,
+				2DE0F1242C7FA0330008ACF2 /* AppDelegate.swift in Sources */,
+				2DE0F1612C7FA7E00008ACF2 /* PopulationViewModel.swift in Sources */,
+				2DFE65532C80943100CDF091 /* PopulationTableViewCell.swift in Sources */,
+				2DE0F1562C7FA1DE0008ACF2 /* Bindable.swift in Sources */,
+				2DE0F1632C7FA80E0008ACF2 /* AppCoordinator.swift in Sources */,
+				2DE0F1672C7FA88E0008ACF2 /* PopulationViewController.swift in Sources */,
+				2DE0F15E2C7FA79D0008ACF2 /* ApiService.swift in Sources */,
+				2DE0F1262C7FA0330008ACF2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE0F1322C7FA0360008ACF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFE655F2C80B48600CDF091 /* MockAPIService.swift in Sources */,
+				2DFE655B2C80B3BB00CDF091 /* ApiServiceTests.swift in Sources */,
+				2DFE655D2C80B3E900CDF091 /* PopulationViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE0F13C2C7FA0360008ACF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE0F1452C7FA0360008ACF2 /* CensusUSAUITests.swift in Sources */,
+				2DE0F1472C7FA0360008ACF2 /* CensusUSAUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DE0F1382C7FA0360008ACF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DE0F11F2C7FA0330008ACF2 /* CensusUSA */;
+			targetProxy = 2DE0F1372C7FA0360008ACF2 /* PBXContainerItemProxy */;
+		};
+		2DE0F1422C7FA0360008ACF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DE0F11F2C7FA0330008ACF2 /* CensusUSA */;
+			targetProxy = 2DE0F1412C7FA0360008ACF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DE0F12E2C7FA0360008ACF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DE0F12F2C7FA0360008ACF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2DFE65652C80E2BA00CDF091 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DFE65662C80E2BA00CDF091 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DE0F1482C7FA0360008ACF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DE0F1492C7FA0360008ACF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DE0F14B2C7FA0360008ACF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92A3C76CB98EA176D51F873A /* Pods-CensusUSA.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CensusUSA/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = privates.CensusUSA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DE0F14C2C7FA0360008ACF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB70E6FA0AB44EDCFBD995D /* Pods-CensusUSA.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CensusUSA/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = privates.CensusUSA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2DE0F14E2C7FA0360008ACF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95F204E18B930CE263747274 /* Pods-CensusUSATests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7NC9NWJ6L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = privates.CensusUSATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CensusUSA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CensusUSA";
+			};
+			name = Debug;
+		};
+		2DE0F14F2C7FA0360008ACF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39ECC4A9C57E60F13C6CA8AE /* Pods-CensusUSATests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7NC9NWJ6L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = privates.CensusUSATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CensusUSA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CensusUSA";
+			};
+			name = Release;
+		};
+		2DE0F1512C7FA0360008ACF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18978A145DCA9EE2EFBD0BA /* Pods-CensusUSA-CensusUSAUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7NC9NWJ6L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = privates.CensusUSAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CensusUSA;
+			};
+			name = Debug;
+		};
+		2DE0F1522C7FA0360008ACF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E9CBD48BD41069ADC72716 /* Pods-CensusUSA-CensusUSAUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y7NC9NWJ6L;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = privates.CensusUSAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CensusUSA;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DE0F11B2C7FA0330008ACF2 /* Build configuration list for PBXProject "CensusUSA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE0F1482C7FA0360008ACF2 /* Debug */,
+				2DE0F1492C7FA0360008ACF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE0F14A2C7FA0360008ACF2 /* Build configuration list for PBXNativeTarget "CensusUSA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE0F14B2C7FA0360008ACF2 /* Debug */,
+				2DE0F14C2C7FA0360008ACF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE0F14D2C7FA0360008ACF2 /* Build configuration list for PBXNativeTarget "CensusUSATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE0F14E2C7FA0360008ACF2 /* Debug */,
+				2DE0F14F2C7FA0360008ACF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE0F1502C7FA0360008ACF2 /* Build configuration list for PBXNativeTarget "CensusUSAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE0F1512C7FA0360008ACF2 /* Debug */,
+				2DE0F1522C7FA0360008ACF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DE0F1182C7FA0330008ACF2 /* Project object */;
+}
